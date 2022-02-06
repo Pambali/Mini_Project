@@ -16,7 +16,8 @@ import {Link} from 'react-router-dom'
          onEmpty(confirmpassword);
          if(username.value && user_mail.value && phone_no.value && password.value===confirmpassword.value){
           console.log("function executed");
-          //document.getElementById("confirmpasswordspan").innerHTML=""
+          console.log(" executed");
+          document.getElementById("confirmpasswordspan").innerHTML=""
 
            axios.post("http://localhost:5000/add",
           {
